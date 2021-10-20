@@ -28,7 +28,7 @@ window.smoothScroll = function(target) {
 
 //Leistungsangebot. Für die enthaltenen Überschriften Dropdown-Funktion hinterlegen, aber nur für die mobile Version
 //TODO: Create On-Klick-Event für anzeigen und verbergen
-function showText()
+/* function showText() */
 
 
 /* //TEST of a input field
@@ -41,15 +41,36 @@ function eingabe(){
  */
 
 /* CLick-Event: Pfeil-Button zum Hochscrollen */
-const btnScrollToTop = document.getElementById("btnScrollToTop");
-btnScrollToTop.addEventListener("click", function() {
+/* Methode 1 */
+/* const btnScrollToTop = document.getElementById("btnScrollToTop");
+btnScrollToTop.addEventListener("click", function() { */
     /* Three methods to make it scroll up */
-    window.scrollTo(0,0)
+    /* window.scrollTo(0,0) */
     
    /*  window.scrollTo({
         top: 50,
         left:0, 
         behavior: "smooth"
     }); */
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-});
+    /* $("html, body").animate({ scrollTop: 0 }, "slow");
+}); */
+
+/* Methode 2 */
+const btnScrollToTop = document.querySelector("#btnScrollUp");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction () {
+    if (window.pageYOffset > 300) {
+        btnScrollToTop.style.display = "block";
+    }
+    else { //Hide btnScrollToTop
+        btnScrollToTop.style.display = "none";
+    }
+}
+
+btnScrollToTop.addEventListener("click", backToTop)
+
+function backToTop () {
+    window.scrollTo(0,0);
+}

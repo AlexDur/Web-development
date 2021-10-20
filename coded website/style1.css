@@ -1,5 +1,5 @@
 /* In mobiler Ansicht: 
-Navigationsleiste: Links durch Hamburder ersetzen
+Navigationsleiste: Links durch Hamburger ersetzen
 Preisliste in Breite anpassen */
 
 
@@ -95,7 +95,7 @@ Wie Schriftfarbe ändern, entgegen allg. Einstellung oben. **/
 /*Bild Chinesische Textkarten */
 .header {
 	width: 100%;
-	height: 1200px;
+	height: 1000px;
 	background-image: url(images2/textkarten.jpg);
 	background-size: cover;
 	background-position:center;
@@ -110,8 +110,9 @@ Wie Schriftfarbe ändern, entgegen allg. Einstellung oben. **/
 	/* Hintergrundbox */
 		position: relative;
 		box-sizing: border-box;
-		width: 50%;
-		margin-left: 25%;
+		width: 25%;
+		margin: auto;
+		/* margin-left: 25%; */
 		/* "top in %" bedeutet den %-Anteil von Oben abstandnehmend  */
 		top: 30%;
 		/* display: flex; */
@@ -330,20 +331,26 @@ input[type=senden]:hover {
 	color: #e74c3c;
 }
 
-#btnScrollToTop {
+#btnScrollUp {
+	display: none;
 	border-radius: 50%;
-	background-image: url(images2/pfeilhoch.png);
+	/* background-image: url(images2/pfeilhoch.png); */
 	background-size: cover;
 	position: fixed;
 	bottom: 3%;
+	cursor: pointer;
+	outline: none;
 	right: 3%;
 	width: 50px;
 	height: 50px;
+	transition-duration: 0.5s;
+	transition-timing-function:unset;
+	transition-property: background-color, color;
 }
 
-#btnScrollToTop:active {
-	background: white
-	;
+#btnScrollUp:hover, #btnScrollUp:focus {
+	background-color: #e74c3c;
+	color: white;
 }
 
 
