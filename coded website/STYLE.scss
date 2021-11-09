@@ -1,0 +1,24 @@
+@import "./variables";
+@import "./banner";
+
+/* Rotes Hintergrundbild */
+header {
+  width: 100%;
+  height: 1000px;
+  background-image: url(images2/textkarten.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .marco {
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 700px;
+    margin-right: 700px;
+    top: 30%;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}

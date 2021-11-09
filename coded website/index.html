@@ -9,74 +9,103 @@
 		<meta http-equiv="X-UA-Compatible">
  
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="style1.css">;
+		<link rel="stylesheet" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> -->
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 		
 	</head>
 		<body>
-			<button id="btnScrollUp"><i class="fas fa-angle-double-up"></i></button>
-		<P></P>
-		<div class="container">
-			<div class="navbar">
-				<div class="left">
+		<!-- Responsive behaviors - Toggler: Read description on getbootstrap.com -->
+		<div class="container-fluid"> <!-- style="height: 40px; -->
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+				<div class="container-fluid" >
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<a class="navbar-brand" style="font-size: 20px; color: #e74c3c">中德友誼 China | Deutschland - Freundschaft</a>
+					<ul class="navbar-nav ms-auto text-center" style="font-size: 20px">
+					  <li class="nav-item" >
+						<a class="nav-link active" aria-current="page" href="#offer">Leistungen</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#aboutme">Über mich</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#work">Meine Arbeit</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#cost">Kosten</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#contact">Kontakt</a>
+					  </li>
+				  </div>
+				</div>
+			  </nav>
+			</div>
+
+
+
+			<!-- <div class="navbar">
+				<div class="left"> -->
 					<!--  Permalink für Schriftzeichen einsetzen, damit man bei Klick wieder an Seitenanfang kommt.-->
 					<!-- <a href= "#中国德国友谊">中国德国友谊</a> -->
-					<span style="font-size: 35px; color: #e74c3c">中德友誼 </span>
-					<span style="font-size: 20px; color: #e74c3c">China | Deutschland - Freundschaft </span>
-				</div>
+					<!-- <span style="font-size: 35px; color: #e74c3c">中德友誼 </span>
+					<span style=" color: #e74c3c">China | Deutschland - Freundschaft </span> -->
+				<!-- </div>
 				<div class="right">
-					<ul class="nav">
+					<ul class="nav"> -->
 					<!-- 	<label for="toggle">&#9776;</label>
 					<input type="checkbox" id = "toggle"/>	 -->
-						<li><a href="#contact">Kontakt</a></li>
+						<!-- <li><a href="#contact">Kontakt</a></li>
 						<li><a href="#prices">Kosten</a></li>
 						<li><a href="#work">Meine Arbeit</a></li>
 						<li><a href="#aboutme">Über mich</a></li>
 						<li><a href="#offer">Leistungen</a></li>
 					</ul>
 				</div>
-			</div>
-
+			</div> -->
 
 			<!--Introbild-->
-				<div class="header">
-					<div class="marco" id=#start>
-						<!--<img src="images2/Chinesisches_Schriftzeichen-Tiger-Hu.crop480x281-800x450.jpg" id="logo">-->
-						 <h1>Marco Durach (B.A.)</h1>
-							<h2>freiberuflicher Übersetzer</h2>
-							<h2>für Mandarin</h2>	
-							<br>					
-				<!-- Animation zum Runterscrollen beim Klick auf Pfeil-->
-						<div class = "button1">
-						</class> <button type="button" onclick="smoothScroll(document.getElementById('offer'))">V</button>			
-						</div>	
-					</div>
-				</div>
+			<header>
+				<div class="marco">
+
+					<h2>	Marco Durach (B.A.) </h2>
+					<h3>	freiberuflicher Übersetzer</h3>
+					<h3>	für Mandarin	</h3>
+
+					<br>					
+				<!-- Animation zum Runterscrollen beim Klick auf Pfeil-->				
+				<button type="button" id="buttonPfeilRunter" onclick="smoothScroll(document.getElementById('offer'))">V</button>
+			</div>
+					
+			</header>
 			<br>
 
-			<!--LEISTUNGEN-->
+			<!--LEISTUNGSANGEBOT-->
 			<!--the "id" enables it to click on the word in the navbar and thereby jump to the section without scrolling -->
-			<div class="banner" id="offer">
+			<div class="banner1" id="offer">
 					<h2>Leistungsangebot</h2>
 					<h3><br>Als freiberuflicher Übersetzer biete ich <br> folgende Dienstleistungen an:<br></h3><br><br><br>
 					<table>
 						<dl>
 							<dd><u>Übersetzen und Verfassen von Texten</u></dd><br>
-							<dd><span style="font-size: 20px; color: #e74c3c">Beispiel:</span> Ihnen liegt ein Text auf Mandarin oder Deutsch vor, den ich Ihnen gerne 
+							<dd><span style="color: #e74c3c">Beispiel:</span> Ihnen liegt ein Text auf Mandarin oder Deutsch vor, den ich Ihnen gerne 
 								in die jeweils andere Sprache übersetze.</dd><br>
-							<dd><span style="font-size: 20px; color: #e74c3c">Beispiel:</span> Sie möchten mit einem chinesischen Kunden oder Geschäftspartner in 
+							<dd><span style="color: #e74c3c">Beispiel:</span> Sie möchten mit einem chinesischen Kunden oder Geschäftspartner in 
 								 dessen Landessprache schriftlich oder telefonisch Kontakt aufnehmen? Hier kann ich Ihnen mit dem Verfassen von Email-Texten oder dem Führen von Telefonaten behilflich sein.</dd><br>
 						</dl><br><br>
 						<dl>
 							<dd><u>Simultanübersetzungen von Vorträgen</u></dd><br>
-							<dd><span style="font-size: 20px; color: #e74c3c">Beispiel:</span> Ein Vortrag eines mandarin-sprachigen Gastredners ist geplant. 
+							<dd><span style="color: #e74c3c">Beispiel:</span> Ein Vortrag eines mandarin-sprachigen Gastredners ist geplant. 
 								In dessen Sprechpausen kann ich den deutschen Zuhörern im Raum die Inhalte sinngemäß und möglicht originalgetreu vermitteln.</dd>
 						</dl><br><br><br>
 						<dl>
 							<dd><u>Touristische Führungen</u></dd><br>
-							<dd><span style="font-size: 20px; color: #e74c3c">Beispiel:</span> Für Geschäftskunden, Reisegruppen sowie Privatpersonen aus China kann ich Details zur betreffenden Umgebung, mit welcher ich mich im Vorfeld vertraut mache, erläutern. </dd>
+							<dd><span style="color: #e74c3c">Beispiel:</span> Für Geschäftskunden, Reisegruppen sowie Privatpersonen aus China kann ich Details zur betreffenden Umgebung, mit welcher ich mich im Vorfeld vertraut mache, erläutern. </dd>
 						</dl>
 					</table>
 					<br><br><br>
@@ -89,12 +118,12 @@
 				<div class="banner2" id="aboutme">
 					<div class="textblock">
 						<h3>Über mich - Marco Durach</h3>
-						<br>	<br>	
-						<p>Ich bin studierter Sinologe - wohnhaft in Wolfach im Schwarzwald. 2015 habe ich den Bachelor-Studiengang "China-Studien" an der Freien Universtität Berlin abgeschlossen.
+						<br><br><br><br><br><br><br><br><br>			
+						<p>Ich bin studierter Sinologe - wohnhaft in Wolfach im Schwarzwald. 2015 habe ich den Bachelor-Studiengang "China-Studien" an der Freien Universtität Berlin abgeschlossen.</p>
 						<br><br>
-						Mit jedem meiner Aufenthalten im Reich der Mitte wuchs meine Faszination für dessen kulturelle Besonderheiten. Die großen gesellschaftlichen Veränderungen im Land durch dessen rasante wirtschaftliche Entwicklung konnte ich vor Ort mit eigenen Augen miterleben.
+						<p>Mit jedem meiner Aufenthalten im Reich der Mitte wuchs meine Faszination für dessen kulturelle Besonderheiten. Die großen gesellschaftlichen Veränderungen im Land durch dessen rasante wirtschaftliche Entwicklung konnte ich vor Ort mit eigenen Augen miterleben.</p>
 						<br><br>
-						Meine fundierte theoretische Ausbildung in Kombination mit meinen über die Jahre gewonnen Erkenntnisse über die chinesiche Weltanschauung machen mich zu einem idealen Ansprechpartner für Ihre Übersetzungsarbeiten.</p>
+						<p>Meine fundierte theoretische Ausbildung in Kombination mit meinen über die Jahre gewonnen Erkenntnisse über die chinesiche Weltanschauung machen mich zu einem idealen Ansprechpartner für Ihre Übersetzungsarbeiten.</p>
 						<div class="marco_face"></div>
 					</div>
 				</div>
@@ -104,11 +133,11 @@
 				<div class="textblock1">
 					<h3>Meine Arbeit</h3>
 						<br>
-						<p>Zu meinen bisherigen Kunden zählen zum einen das Freilichtmusem "Vogtsbauernhöfe" in Gutach, wo ich in Sommersaion regelmäßig Führungen für chinesische Reisegruppen. Zum anderen stehe ich der "Taijiquan-Schule Ortenau" in Gengenbach stehe ich mehrmals im Jahr als Simultanübersetzer für chinesische Gast-Dozenten zur Verfügung.
+						<p>Zu meinen bisherigen Kunden zählen zum einen das Freilichtmusem "Vogtsbauernhöfe" in Gutach, wo ich in Sommersaion regelmäßig Führungen für chinesische Reisegruppen. Zum anderen stehe ich der "Taijiquan-Schule Ortenau" in Gengenbach stehe ich mehrmals im Jahr als Simultanübersetzer für chinesische Gast-Dozenten zur Verfügung.</p> 
 						<br><br>
-						Als studierter Sinologe (B.A.) setzte ich hohe Ansprüche an eine Übersetzungsarbeit, was auch meine eigene Übersetzungen einschließt. Daher achte ich bei meinen Translationen auf die richtige Balance zwischen bedeutungsgleicher und freier Interpretation des Textes.
+						<p>Als studierter Sinologe (B.A.) setzte ich hohe Ansprüche an eine Übersetzungsarbeit, was auch meine eigene Übersetzungen einschließt. Daher achte ich bei meinen Translationen auf die richtige Balance zwischen bedeutungsgleicher und freier Interpretation des Textes.</p> 
 						<br><br>
-						Nach Abwägung des Zeitaufwands der erhalten Übersetzungsarbeit, kann ich innherhalb eines Tages Rückmeldung geben, ob und wie lange der Auftrag bearbeiten werden wird. Eine ausführliche Besprechung des Ergebnisses ist genauso selbstverständlich wie kleinere Nachbearbeitungen. Des Weiteren helfe ich bei der Formulierung von Email-Texten auf Chinesisch.</p> 
+						<p>Nach Abwägung des Zeitaufwands der erhalten Übersetzungsarbeit, kann ich innherhalb eines Tages Rückmeldung geben, ob und wie lange der Auftrag bearbeiten werden wird. Eine ausführliche Besprechung des Ergebnisses ist genauso selbstverständlich wie kleinere Nachbearbeitungen. Des Weiteren helfe ich bei der Formulierung von Email-Texten auf Chinesisch.</p> 
 						<br>
 						<br>
 					</div>
@@ -117,10 +146,11 @@
 			<hr style="width: 850px; margin:auto">
 
 			<!-- KOSTEN -->
-			<div class="banner4" id="prices">
+			<div class="banner4" id="cost">
 				<h3>Kosten</h3><br>
-				Entsprechend Ihrer Angaben überprüfe ich zunächst, ob ich Ihnen helfen kann und wie groß der Aufwand in etwa wäre. Auf dieser Basis erstelle ich einen Kostenvoranschlag, der sich an den folgenden Preisen orientiert:<br>
+				<p> Entsprechend Ihrer Angaben überprüfe ich zunächst, ob ich Ihnen helfen kann und wie groß der Aufwand in etwa wäre. Auf dieser Basis erstelle ich einen Kostenvoranschlag, der sich an den folgenden Preisen orientiert:</p><br>
 				<table  id="preisliste">
+
 					<tr>
 						<th>Privatpersonen</th>
 						<th>...........</th>
@@ -133,6 +163,7 @@
 						<th>...........</th>
 						<th>nach Vereinbarung</th>
 					</tr>
+
 				</table>
 				<br><br><br><br>
 				<p><!--Alle Preise zzgl. 19% gesetzlicher MwSt.</p>-->
@@ -151,7 +182,7 @@
 			</div>
 				
 			<!-- Formular -->
-				<div class="tile" id="login">
+				<div class="form" id="login">
 						<form action="scripts/kontakformular.php" method="POST" enctype=”multipart/form-data” name=”EmailForm”>
 							<input type="name"
 							placeholder="Name">
@@ -175,6 +206,7 @@
 						<br><br><br>
 						
 					<p style="color: white">© Marco Durach. 2020. All rights reserved. | <a style="color: white" href="impressum.html"; target="_blank">Impressum & Datenschutz</a></p><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br><br>
 					<div class="openstreetmap">
 					<!--HTML Form code start -->
 						<?
@@ -183,15 +215,16 @@
 						
 					<!--Karte mit Wolfach --->
 						<iframe width="50%" height="600" src="https://www.openstreetmap.org/export/embed.html?bbox=8.160318377777003%2C48.262067197414616%2C8.270696643157864%2C48.301992170537154&amp;layer=mapnik&amp;marker=48.282033584658286%2C8.215507510467432"
-						 style="border: 1px solid black; margin: 30px"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.2820&amp;mlon=8.2155#map=14/48.2820/8.2155"></a></small>
+						 style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.2820&amp;mlon=8.2155#map=14/48.2820/8.2155"></a></small>
 					</div>
 				</div>
 			
 			<!-- scrollup_button unten im Eck zeigen und zum hochscrollen verwendbar machen-->
-			
+			<i<button  class="fas fa-4x fa-arrow-circle-up" id="btnScrollUp" ></button></i>
 	
 	<script src = "https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<script src = "index0.js"></script>		
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	</body>
 </html>
