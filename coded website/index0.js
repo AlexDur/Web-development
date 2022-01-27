@@ -26,34 +26,6 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
 
-//Leistungsangebot. Für die enthaltenen Überschriften Dropdown-Funktion hinterlegen, aber nur für die mobile Version
-//TODO: Create On-Klick-Event für anzeigen und verbergen
-/* function showText() */
-
-
-/* //TEST of a input field
-let clickButton = document.querySelector("#click-button");
-clickButton.addEventListener('click', eingabe);
-
-function eingabe(){
-    console.log("Hallo!");
-}
- */
-
-/* CLick-Event: Pfeil-Button zum Hochscrollen */
-/* Methode 1 */
-/* const btnScrollToTop = document.getElementById("btnScrollToTop");
-btnScrollToTop.addEventListener("click", function() { */
-    /* Three methods to make it scroll up */
-    /* window.scrollTo(0,0) */
-    
-   /*  window.scrollTo({
-        top: 50,
-        left:0, 
-        behavior: "smooth"
-    }); */
-    /* $("html, body").animate({ scrollTop: 0 }, "slow");
-}); */
 
 /* Methode 2 */
 const btnScrollToTop = document.querySelector("#btnScrollUp");
