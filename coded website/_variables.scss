@@ -1,0 +1,55 @@
+$red: #e74c3c;
+$grey: #444;
+
+/* * {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  margin: 0px;
+  padding: 0px;
+} */
+
+/* p {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: $grey;
+  margin: 0px;
+  padding: 0px;
+} */
+
+br {
+  display: block;
+  margin: 8px 0;
+}
+
+h1 {
+  color: #e74c3c;
+}
+
+h2 {
+  color: #e74c3c;
+}
+
+h3 {
+  color: $grey;
+}
+
+dl {
+  display: flex;
+  flex-flow: row wrap;
+}
+dt {
+  flex-basis: 20%;
+  padding: 2px 4px;
+  background: #333;
+  text-align: right;
+  color: #fff;
+}
+dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 2px 4px;
+}
